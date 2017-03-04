@@ -1,0 +1,32 @@
+.formInput {
+  display: block;
+}
+
+.user {
+  display: inline-block;
+  margin-left: 75px;
+}
+
+form {
+  float: right;
+  margin-right: 100px;
+  text-align: center;
+}
+
+#users {
+  float: left;
+  width: 75%;
+  // text-align: center;
+}
+
+#title {
+  width: 400px;
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.text {
+  text-align: center;
+}
