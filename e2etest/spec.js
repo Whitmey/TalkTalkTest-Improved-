@@ -2,7 +2,7 @@
 describe('TalkTalkApp', function() {
 
   beforeEach(function() {
-    browser.get('http://www.willwhitmey.io/TalkTalkTest-Improved-/');
+    browser.get('http://www.willwhitmey.io/TalkTalkTest-e2eTesting-/');
   });
 
   it('should have a title', function() {
