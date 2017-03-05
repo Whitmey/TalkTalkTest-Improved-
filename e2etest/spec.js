@@ -1,9 +1,5 @@
 // spec.js
 describe('TalkTalkApp', function() {
-  // var firstNumber = element(by.model('first'));
-  // var secondNumber = element(by.model('second'));
-  // var goButton = element(by.id('gobutton'));
-  // var latestResult = element(by.binding('latest'));
 
   beforeEach(function() {
     browser.get('http://www.willwhitmey.io/TalkTalkTest-Improved-/');
@@ -29,35 +25,10 @@ describe('TalkTalkApp', function() {
   });
 
   it('should expand to show details', function() {
-    element(by.id('expand')).get(0).click();
+    // element(by.id('expand')).get(0).click();
+    element.all(by.css('#expand')).get(0).click();
 
-    expect(element(by.id('shouldExpand')).get(0).isDisplayed()).toBe(true);
-  })
-
-  // it('should add a contact', function() {
-  //   element(by.model('todoList.todoText')).sendKeys('write first protractor test');
-  //   element(by.css('[value="add"]')).click();
-  //
-  //   var todoList = element.all(by.repeater('todo in todoList.todos'));
-  //   expect(todoList.count()).toEqual(3);
-  //   expect(todoList.get(2).getText()).toEqual('write first protractor test');
-  // });
-
-  // it('should add one and two', function() {
-  //   firstNumber.sendKeys(1);
-  //   secondNumber.sendKeys(2);
-  //
-  //   goButton.click();
-  //
-  //   expect(latestResult.getText()).toEqual('3');
-  // });
-  //
-  // it('should add four and six', function() {
-  //   firstNumber.sendKeys(4);
-  //   secondNumber.sendKeys(6);
-  //
-  //   goButton.click();
-  //
-  //   expect(latestResult.getText()).toEqual('10');
-  // });
+    // expect(element(by.id('shouldExpand')).get(0).isDisplayed()).toBe(true);
+    expect(element.all(by.css('#shouldExpand')).get(0).isDisplayed()).toBe(true);
+  });
 });
