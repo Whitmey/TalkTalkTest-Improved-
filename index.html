@@ -21,13 +21,13 @@
             <div class="card-block">
               <h4 class="text" class="card-title">{{ main.name }}</h4>
               <div ng-show="showDetails">
-                 <p class="text">Email: {{ main.email }}</p>
+                 <p class="text" id="shouldExpand">Email: {{ main.email }}</p>
                  <p class="text">Job: {{ main.job }}</p>
                  <p class="text">Location: {{ main.location }}</p>
                  <p class="text">Tag: {{ main.tag }}</p>
               </div>
               <div class="text">
-                <a class="btn btn-primary" href="#" ng-click="showDetails = !showDetails">Details</a>
+                <a class="btn btn-primary" href="#" ng-click="showDetails = !showDetails" id=expand>Details</a>
               </div>
             </div>
         </div>
